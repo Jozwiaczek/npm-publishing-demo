@@ -1,3 +1,13 @@
+# [1.4.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.3.0...v1.4.0) (2021-03-27)
+
+
+### Features
+
+* add fake readme ([f322462](https://github.com/Jozwiaczek/npm-publishing-demo/commit/f322462596fd470deca185f89baff3f7c661248f))
+* change release on push to production ([f13f952](https://github.com/Jozwiaczek/npm-publishing-demo/commit/f13f95250c835d83e80479d2d96a607a71f62ce1))
+* more mock docs ([bbbdf06](https://github.com/Jozwiaczek/npm-publishing-demo/commit/bbbdf064c20f339f67e5659ae9213357399109e6))
+* set production branch as a release channel ([60fd01b](https://github.com/Jozwiaczek/npm-publishing-demo/commit/60fd01be0ee7a3c58ab438dc4943f2a2b599093e))
+
 # [1.3.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.2.0...v1.3.0) (2021-03-27)
 
 
