@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.4.0...v1.5.0) (2021-03-27)
+
+
+### Features
+
+* set master branch as a release channel ([f4dcefa](https://github.com/Jozwiaczek/npm-publishing-demo/commit/f4dcefadf9e621f7143b3ea41cdab606be24022d))
+
 # [1.4.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.3.0...v1.4.0) (2021-03-27)
 
 
