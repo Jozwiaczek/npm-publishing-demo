@@ -1,10 +1,22 @@
 {
   "name": "npm-publishing",
+  "description": "Simple demo for auto publishing in npm",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "jakub.jozwiak <kubencki@gmail.com>",
+  "files": [
+    "./src/*/**",
+    "README.md"
+  ],
   "license": "MIT",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "yarn clean && tsc --project tsconfig.json",
+    "clean": "rimraf dist"
+  },
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "typescript": "^4.2.3"
   }
 }
