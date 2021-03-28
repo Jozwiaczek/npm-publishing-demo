@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.1.0...v2.2.0) (2021-03-28)
+
+
+### Features
+
+* support other release branches, add badges ([c271976](https://github.com/Jozwiaczek/npm-publishing-demo/commit/c271976166fa13043c319ef59396b3d5744e58e0))
+
 # [2.1.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.0.0...v2.1.0) (2021-03-28)
 
 
