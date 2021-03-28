@@ -1,3 +1,11 @@
+# [2.1.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.0.0...v2.1.0) (2021-03-28)
+
+
+### Features
+
+* add ci for beta branch ([e0a8f06](https://github.com/Jozwiaczek/npm-publishing-demo/commit/e0a8f064b54dcb9296877ace22162dd3a456e88b))
+* remove second console log ([41acf0d](https://github.com/Jozwiaczek/npm-publishing-demo/commit/41acf0d9d0e9a9591875fc5687751a2020974363))
+
 # [2.0.0-beta.1](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.5.0...v2.0.0-beta.1) (2021-03-28)
 
 
