@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.5.0...v2.0.0) (2021-03-28)
+
+
+### Features
+
+* add console.log ([08b855f](https://github.com/Jozwiaczek/npm-publishing-demo/commit/08b855f8db214368ae9ec0652d82fbe5b1a78256))
+
+
+### BREAKING CHANGES
+
+* test bc release
+
 # [1.5.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v1.4.0...v1.5.0) (2021-03-27)
 
 
