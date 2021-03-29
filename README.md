@@ -17,4 +17,4 @@
 Vae, noster caesium! Ubi est nobilis eleates? Lapsus de fatalis nixus, perdere absolutio!
 Mortem, classis, et hippotoxota.
 
-test next branch.
+test release notes workflow
