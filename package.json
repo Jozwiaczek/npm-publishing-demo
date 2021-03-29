@@ -15,7 +15,7 @@
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "build": "yarn clean && tsc --project tsconfig.json",
