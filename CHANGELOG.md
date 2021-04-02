@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.12.6...v2.13.0) (2021-04-02)
+
+
+### Features
+
+* add console log with git tag ([da590fe](https://github.com/Jozwiaczek/npm-publishing-demo/commit/da590fe4337d9e9ff63745e278b5ada41cf7626e))
+
 # [2.11.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.10.2...v2.11.0) (2021-04-02)
 
 
