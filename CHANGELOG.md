@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.6.0...v2.7.0) (2021-04-02)
+
+
+### Features
+
+* test new release ([d070126](https://github.com/Jozwiaczek/npm-publishing-demo/commit/d0701263686d54fcf5ef7d9691bfdc26fc82286b))
+
 # [2.6.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.5.0...v2.6.0) (2021-03-29)
 
 
