@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -24,7 +25,6 @@ jobs:
         run: yarn
       - name: Release
         env:
-          SEMANTIC_RELEASE_PR: ${{ secrets.SEMANTIC_RELEASE_PR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
