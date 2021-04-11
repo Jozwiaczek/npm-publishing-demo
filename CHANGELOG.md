@@ -1,3 +1,16 @@
+# [2.14.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.13.0...v2.14.0) (2021-04-11)
+
+
+### Features
+
+* test protected branch ([9f94273](https://github.com/Jozwiaczek/npm-publishing-demo/commit/9f94273a25429f02488aaf0ce516f43b771bacd6))
+* test protected branch ([d8104e0](https://github.com/Jozwiaczek/npm-publishing-demo/commit/d8104e0795bcac8e295b116584d603ea2c0cf1af))
+* test protected branch ([8ab2304](https://github.com/Jozwiaczek/npm-publishing-demo/commit/8ab2304358de45b27678d486acd2675f6be2a6a4))
+* test protected branch ([5c909dd](https://github.com/Jozwiaczek/npm-publishing-demo/commit/5c909ddb0d4efecf5496a0f47493661d37ef0442))
+* test protected branch ([8e3d0b9](https://github.com/Jozwiaczek/npm-publishing-demo/commit/8e3d0b925e54136cbd20c6b75882216c222fc1fd))
+* test protected branch ([5c3a68e](https://github.com/Jozwiaczek/npm-publishing-demo/commit/5c3a68e07a3ab07c6514b89df0c384b48015df2b))
+* test protected branch ([30db73c](https://github.com/Jozwiaczek/npm-publishing-demo/commit/30db73c63a0a08fd8791afe87f2d6ebe13dbdfa9))
+
 # [2.13.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.12.6...v2.13.0) (2021-04-02)
 
 
