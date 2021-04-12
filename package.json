@@ -2,7 +2,7 @@
   "name": "@jozwiaczek/npm-publishing",
   "description": "Simple demo for auto publishing in npm",
   "private": false,
-  "version": "2.15.0",
+  "version": "2.17.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "jakub.jozwiak <kubencki@gmail.com>",
