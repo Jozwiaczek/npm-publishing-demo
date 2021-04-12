@@ -39,9 +39,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "engines": {
-    "node": ">=12",
-    "yarn": ">=1.22"
   }
 }
