@@ -11,8 +11,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    env:
-      NODE_VERSION: 12.x
     steps:
       - name: 'Git checkout'
         uses: actions/checkout@v2
@@ -21,10 +19,11 @@ jobs:
           persist-credentials: false
 
       # Beginning of yarn setup, keep in sync between all workflows
-      - name: Use node.js ${{ matrix.node-version }}
+      - name: Use node.js 12
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '12'
+          check-latest: true
       - name: 'Use cached node_modules'
         id: cache-modules
         uses: actions/cache@v2.1.4
