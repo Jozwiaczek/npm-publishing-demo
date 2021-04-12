@@ -1,3 +1,13 @@
+# [2.23.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.22.0...v2.23.0) (2021-04-12)
+
+
+### Features
+
+* test invalid npm token ([c6155b9](https://github.com/Jozwiaczek/npm-publishing-demo/commit/c6155b94f3f8cafe2b25fde40f80435f4a73bd68))
+* test invalid npm token ([32a2f97](https://github.com/Jozwiaczek/npm-publishing-demo/commit/32a2f97e82a7e520c5355d500189bcd1bf32a5f0))
+* test invalid npm token ([c19431b](https://github.com/Jozwiaczek/npm-publishing-demo/commit/c19431b495a0f3d8f345c31e72cf7f0bff0010f9))
+* test invalid npm token ([2dfc2af](https://github.com/Jozwiaczek/npm-publishing-demo/commit/2dfc2af986ed1631356b1d267c65f3751ba58907))
+
 # [2.22.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.21.0...v2.22.0) (2021-04-12)
 
 
