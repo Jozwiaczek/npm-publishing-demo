@@ -1,3 +1,10 @@
+# [2.20.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.19.0...v2.20.0) (2021-04-12)
+
+
+### Features
+
+* test init semantic release ([b820dc8](https://github.com/Jozwiaczek/npm-publishing-demo/commit/b820dc808fcfab368af1b0b5f4eda248d01dbce6))
+
 # [2.19.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.18.0...v2.19.0) (2021-04-12)
 
 
