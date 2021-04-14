@@ -19,6 +19,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
             })
+            console.log('L:22 | context.issue.number: ', context.issue.number);
             console.log(prComments)
 
             github.issues.createComment({
