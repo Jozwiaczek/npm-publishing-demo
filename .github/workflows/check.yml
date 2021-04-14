@@ -10,29 +10,7 @@ jobs:
     steps:
       - name: 'Git checkout'
         uses: actions/checkout@v2
-      - name: 'Check echo'
-        run: |
-          echo "Its working!"
-      - name: Set selected color
-        run: echo '::set-output name=SELECTED_COLOR::green'
-        id: random-color-generator
-      - name: Get color
-        run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
-      - uses: actions/github-script@v3
-        id: set-result
-        with:
-          script: return "Hello!"
-          result-encoding: string
-      - name: Get result
-        run: echo "${{steps.set-result.outputs.result}}"
-      - uses: actions/github-script@v3
-        id: my-script
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          result-encoding: string
-          script: return "I will be string (not JSON) encoded!"
-      - name: Get result
-        run: echo "${{steps.my-script.outputs.result}}"
+
       - uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
@@ -43,9 +21,5 @@ jobs:
               repo: context.repo.repo,
               body: '👋 Thanks for reporting!'
             })
-            github.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['Triage']
-            })
+            const prComments = github.issues.list()
+            console.log(prComments)
