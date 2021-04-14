@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
       - name: 'Check echo'
         run: |
-        echo "Its working!"
+          echo "Its working!"
       - name: Set selected color
         run: echo '::set-output name=SELECTED_COLOR::green'
         id: random-color-generator
