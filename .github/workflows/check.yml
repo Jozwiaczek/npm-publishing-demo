@@ -20,5 +20,5 @@ jobs:
               repo: context.repo.repo,
               body: '👋 Thanks for reporting!'
             })
-            const prComments = github.issues.list()
+            const prComments = await github.issues.list()
             console.log(prComments)
