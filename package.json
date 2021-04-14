@@ -22,7 +22,7 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "build": "yarn clean && tsc --project tsconfig.json",
-    "build:commentPR": "rimraf ci/dist && tsc --project ci/tsconfig.json" ,
+    "build:commentPR": "rimraf ci/dist && tsc --project ci/tsconfig.json",
     "clean": "rimraf dist"
   },
   "devDependencies": {
@@ -30,6 +30,7 @@
     "@commitlint/config-conventional": "^12.0.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "@types/node": "^14.14.37",
     "conventional-changelog-cli": "^2.1.1",
     "husky": "^5.2.0",
     "lint-staged": "^10.5.4",

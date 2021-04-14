@@ -1,11 +1,18 @@
-import changelog from '../../CHANGELOG.md';
+import { readFileSync } from 'fs';
 
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
+  let changelog = '';
+  try {
+    changelog = JSON.parse(readFileSync(`${__dirname}/CHANGELOG.md`, 'utf8'));
+  } catch (error) {
+    throw Error('Missing changelog.');
+  }
+
   const newMessage = `
   	👋 Thanks for testing#5!\n
   	<details>
   		<summary>Changelog:</summary>
-  		${changelog.toString()}
+  		${changelog}
 		</details>
   `;
 
