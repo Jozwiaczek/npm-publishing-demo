@@ -26,17 +26,14 @@ jobs:
             };
 
             let commentId;
-            try {
-              const comments = (await github.issues.listComments(commentInfo)).data;
-              for (let i = comments.length; i--; ) {
-                const c = comments[i];
-                if (comment.user.type === "Bot" && comment.body.includes(signature)) {
-                  commentId = c.id;
-                  break;
-                }
+            const comments = (await github.issues.listComments(commentInfo)).data;
+            for (let i = comments.length; i--; ) {
+              const c = comments[i];
+              console.log(comment.user)
+              if (comment.user.type === "Bot" && comment.body.includes(signature)) {
+                commentId = c.id;
+                break;
               }
-            } catch (e) {
-              console.log("Error checking for previous comments: " + e.message);
             }
 
             if (commentId) {
