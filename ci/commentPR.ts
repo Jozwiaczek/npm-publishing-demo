@@ -3,7 +3,8 @@ import { readFileSync } from 'fs';
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
   let changelog = '';
   try {
-    changelog = readFileSync('../../CHANGELOG.md', 'utf8');
+    console.log(__dirname);
+    changelog = readFileSync('../CHANGELOG.md', 'utf8');
   } catch (error) {
     throw Error(`Missing changelog: ${error}`);
   }
