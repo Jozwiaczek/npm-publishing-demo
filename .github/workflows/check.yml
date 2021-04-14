@@ -14,7 +14,11 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const prComments = await github.issues.list()
+            const prComments = await github.issues.listComments({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
             console.log(prComments)
 
             github.issues.createComment({
@@ -22,4 +26,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: '👋 Thanks for reporting!'
+
             })
