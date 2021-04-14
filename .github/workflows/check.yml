@@ -14,5 +14,5 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const script = require(`__dirname/ci/commentPR.js`)
+            const script = require(`${process.env.GITHUB_WORKSPACE}/ci/commentPR.js`)
             script({github, context})
