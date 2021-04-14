@@ -14,15 +14,16 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
+            const newMessage = '👋 Thanks for testing#4!';
+
             const commentInfo = {
               ...context.repo,
               issue_number: context.issue.number,
             };
-
-            const signature = "via JJ GitHub Actions 🇵🇱"
+            const signature = "via JJ GitHub Actions 🇵🇱";
             const comment = {
               ...commentInfo,
-              body: `👋 Thanks for testing#3!\n\n${signature}`,
+              body: `${newMessage}\n\n${signature}`,
             };
 
             let commentId;
