@@ -5,7 +5,7 @@ export const commentPR = async ({ github, context }: { github: any; context: any
   	👋 Thanks for testing#5!\n
   	<details>
   		<summary>Changelog:</summary>
-  		${changelog}
+  		${changelog.toString()}
 		</details>
   `;
 
