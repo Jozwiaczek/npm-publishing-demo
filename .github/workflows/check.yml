@@ -19,12 +19,11 @@ jobs:
               issue_number: context.issue.number,
             };
 
+            const signature = "via JJ GitHub Actions 🇵🇱"
             const comment = {
               ...commentInfo,
-              body: commentMarkdown,
+              body: `👋 Thanks for testing!\n\n${signature}`,
             };
-
-            const signature = "via JJ GitHub Actions 🇵🇱"
 
             let commentId;
             try {
