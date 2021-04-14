@@ -29,7 +29,8 @@ jobs:
             const comments = (await github.issues.listComments(commentInfo)).data;
             for (let i = comments.length; i--; ) {
               const c = comments[i];
-              console.log(c);
+              console.log(c.user.type);
+              console.log(c.body.includes(signature);
               if (c.user.type === "Bot" && c.body.includes(signature)) {
                 commentId = c.id;
                 break;
@@ -47,10 +48,3 @@ jobs:
             if (!commentId) {
               await github.issues.createComment(comment);
             }
-
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `👋 Thanks for testing!\n\n${signature}`
-            })
