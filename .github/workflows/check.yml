@@ -5,6 +5,8 @@ jobs:
   release:
     name: Test Check
     runs-on: ubuntu-latest
+    outputs:
+      output1: 'hello world'
     steps:
       - name: 'Git checkout'
         uses: actions/checkout@v2
@@ -32,6 +34,3 @@ jobs:
               repo: context.repo.repo,
               labels: ['Triage']
             })
-      outputs:
-        sum: # id of the output
-          description: 'The sum of the inputs'
