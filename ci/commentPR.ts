@@ -1,4 +1,4 @@
-const commentPR = async ({ github, context }: { github: any; context: any }) => {
+export const commentPR = async ({ github, context }: { github: any; context: any }) => {
   const newMessage = '👋 Thanks for testing#5!';
 
   const commentInfo = {
@@ -33,5 +33,3 @@ const commentPR = async ({ github, context }: { github: any; context: any }) => 
     await github.issues.createComment(comment);
   }
 };
-
-export default commentPR;
