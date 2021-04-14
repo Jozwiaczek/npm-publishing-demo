@@ -22,7 +22,7 @@ jobs:
             const signature = "via JJ GitHub Actions 🇵🇱"
             const comment = {
               ...commentInfo,
-              body: `👋 Thanks for testing!\n\n${signature}`,
+              body: `👋 Thanks for testing#2!\n\n${signature}`,
             };
 
             let commentId;
