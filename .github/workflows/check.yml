@@ -5,13 +5,12 @@ jobs:
   release:
     name: Test Check
     runs-on: ubuntu-latest
-    outputs:
-      output1: 'hello world'
     steps:
       - name: 'Git checkout'
         uses: actions/checkout@v2
 
-      - uses: actions/github-script@v3
+      - name: 'test'
+        uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
