@@ -10,7 +10,7 @@
     "noFallthroughCasesInSwitch": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
-  "files": ["commentPR.ts"]
+  "include": ["globals.d.ts", "commentPR.ts"]
 }

@@ -1,5 +1,13 @@
+import changelog from '../../CHANGELOG.md';
+
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
-  const newMessage = '👋 Thanks for testing#5!';
+  const newMessage = `
+  	👋 Thanks for testing#5!\n
+  	<details>
+  		<summary>Changelog:</summary>
+  		${changelog}
+		</details>
+  `;
 
   const commentInfo = {
     ...context.repo,
