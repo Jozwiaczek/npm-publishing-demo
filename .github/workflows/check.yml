@@ -14,18 +14,55 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const prComments = await github.issues.listComments({
+            const commentInfo = {
+              ...context.repo,
               issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-            })
-            console.log('L:22 | context.issue.number: ', context.issue.number);
-            console.log(prComments)
+            };
+
+            const comment = {
+              ...commentInfo,
+              body: commentMarkdown,
+            };
+
+            const signature = "via JJ GitHub Actions 🇵🇱"
+
+            let commentId;
+            try {
+              const comments = (await github.issues.listComments(commentInfo)).data;
+              for (let i = comments.length; i--; ) {
+                const c = comments[i];
+                if (comment.user.type === "Bot" && comment.body.includes(signature)) {
+                  commentId = c.id;
+                  break;
+                }
+              }
+            } catch (e) {
+              console.log("Error checking for previous comments: " + e.message);
+            }
+
+            if (commentId) {
+              try {
+                await github.issues.updateComment({
+                  ...context.repo,
+                  comment_id: commentId,
+                  body: comment.body,
+                });
+              } catch (e) {
+                commentId = null;
+              }
+            }
+
+            if (!commentId) {
+              try {
+                await github.issues.createComment(comment);
+              } catch (e) {
+                console.log(`Error creating comment: ${e.message}`);
+              }
+            }
 
             github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 Thanks for reporting!'
-
+              body: `👋 Thanks for testing!\n\n${signature}`
             })
