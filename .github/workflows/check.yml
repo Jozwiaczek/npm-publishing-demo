@@ -29,31 +29,23 @@ jobs:
             const comments = (await github.issues.listComments(commentInfo)).data;
             for (let i = comments.length; i--; ) {
               const c = comments[i];
-              console.log(comment.user)
-              if (comment.user.type === "Bot" && comment.body.includes(signature)) {
+              console.log(c);
+              if (c.user.type === "Bot" && c.body.includes(signature)) {
                 commentId = c.id;
                 break;
               }
             }
 
             if (commentId) {
-              try {
-                await github.issues.updateComment({
-                  ...context.repo,
-                  comment_id: commentId,
-                  body: comment.body,
-                });
-              } catch (e) {
-                commentId = null;
-              }
+              await github.issues.updateComment({
+                ...context.repo,
+                comment_id: commentId,
+                body: comment.body,
+              });
             }
 
             if (!commentId) {
-              try {
-                await github.issues.createComment(comment);
-              } catch (e) {
-                console.log(`Error creating comment: ${e.message}`);
-              }
+              await github.issues.createComment(comment);
             }
 
             github.issues.createComment({
