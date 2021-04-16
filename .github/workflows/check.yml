@@ -15,13 +15,14 @@ jobs:
         run: yarn build:commentPR
 
       - name: 'check version'
-        id: packageVersion
+        id: package-version
         run: node -p "require('./package').version"
 
       - name: 'test'
         uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
+          NPM_PACKAGE_VERSION: ${{steps.package-version.outputs.result}}
           script: |
             const { commentPR } = require(`${process.env.GITHUB_WORKSPACE}/ci/dist/commentPR.js`)
             commentPR({ github, context })

@@ -2,13 +2,10 @@ const { readFileSync } = require('fs');
 
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
   console.log('L:11 | context: ', context);
-  // const tmp = steps.packageVersion.outputs.result;
-  //
-  // console.log(tmp);
-
   const changelog = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
   const VERSION = process.env.NPM_PACKAGE_VERSION;
+  console.log('L:8 | VERSION: ', VERSION);
 
   const newMessage = `
 	👋 Thanks for testing#6!
