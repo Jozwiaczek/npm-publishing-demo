@@ -1,17 +1,11 @@
 const { readFileSync } = require('fs');
 
-export const commentPR = async ({
-  github,
-  context,
-  steps,
-}: {
-  github: any;
-  context: any;
-  steps: any;
-}) => {
-  const tmp = steps.packageVersion.outputs.result;
-
-  console.log(tmp);
+export const commentPR = async ({ github, context }: { github: any; context: any }) => {
+  console.log('L:10 | github: ', github);
+  console.log('L:11 | context: ', context);
+  // const tmp = steps.packageVersion.outputs.result;
+  //
+  // console.log(tmp);
 
   const changelog = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
