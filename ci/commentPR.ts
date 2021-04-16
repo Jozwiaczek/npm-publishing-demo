@@ -1,30 +1,14 @@
-const fs = require('fs');
+const { readFileSync } = require('fs');
 
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
-  console.log(__dirname);
-  console.log(__filename);
-  fs.readdirSync(__dirname).forEach((file: any) => {
-    console.log(file);
-  });
-
-  console.log('\n\n---------------\n\n');
-
-  fs.readdirSync(`${__dirname}/../..`).forEach((file: any) => {
-    console.log(file);
-  });
-
-  console.log('\n\n---------------\n\n');
-
-  fs.readdirSync('../../.').forEach((file: any) => {
-    console.log(file);
-  });
+  const tmp = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
   const newMessage = `
-  	👋 Thanks for testing#6!\n
+  	👋 Thanks for testing#6!
+  	
   	<details>
-  		<summary>Details summary</summary>
-  		- Details #1
-  		- Details #2
+  		<summary>CHANGELOG.md</summary>
+  		${tmp}
 		</details>
   `;
 
