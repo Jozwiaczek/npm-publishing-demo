@@ -9,13 +9,13 @@ export const commentPR = async ({ github, context }: { github: any; context: any
 
   console.log('\n\n---------------\n\n');
 
-  fs.readdirSync(`${__dirname}/..`).forEach((file: any) => {
+  fs.readdirSync(`${__dirname}/../..`).forEach((file: any) => {
     console.log(file);
   });
 
   console.log('\n\n---------------\n\n');
 
-  fs.readdirSync('../.').forEach((file: any) => {
+  fs.readdirSync('../../.').forEach((file: any) => {
     console.log(file);
   });
 
