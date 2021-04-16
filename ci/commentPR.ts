@@ -1,9 +1,11 @@
 const { readFileSync } = require('fs');
 
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
-  const changelog = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
+  const projectRootPath = `${__dirname}/../..`;
+  const changelog = readFileSync(`${projectRootPath}/CHANGELOG.md`, 'utf8');
 
-  const version = require('./package').version;
+  const packageJson = JSON.parse(readFileSync(`${projectRootPath}/package.json`, 'utf8'));
+  const version = packageJson.version;
   console.log('L:8 | VERSION: ', version);
 
   const newMessage = `
