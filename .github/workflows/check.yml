@@ -16,6 +16,8 @@ jobs:
 
       - name: 'test'
         uses: actions/github-script@v3
+        env:
+          NPM_PACKAGE_VERSION: ${{ secrets.npm_package_version }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |

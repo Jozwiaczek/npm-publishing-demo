@@ -3,7 +3,7 @@ const { readFileSync } = require('fs');
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
   const tmp = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
-  const VERSION = process.env.npm_package_version;
+  const VERSION = process.env.NPM_PACKAGE_VERSION;
 
   const newMessage = `
 	👋 Thanks for testing#6!
