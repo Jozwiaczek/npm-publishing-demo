@@ -8,7 +8,9 @@ export const commentPR = async ({ github, context }: { github: any; context: any
   	
   	<details>
   		<summary>CHANGELOG.md</summary>
+  		
   		${tmp}
+  		
 		</details>
   `;
 
