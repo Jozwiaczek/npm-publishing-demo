@@ -1,7 +1,19 @@
 const { readFileSync } = require('fs');
 
-export const commentPR = async ({ github, context }: { github: any; context: any }) => {
-  const tmp = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
+export const commentPR = async ({
+  github,
+  context,
+  steps,
+}: {
+  github: any;
+  context: any;
+  steps: any;
+}) => {
+  const tmp = steps.packageVersion.outputs.result;
+
+  console.log(tmp);
+
+  const changelog = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
   const VERSION = process.env.NPM_PACKAGE_VERSION;
 
@@ -12,7 +24,7 @@ export const commentPR = async ({ github, context }: { github: any; context: any
 <details>
 	<summary>CHANGELOG.md</summary>
 	
-${tmp}
+${changelog}
 	
 </details>
   `;
