@@ -5,13 +5,13 @@ export const commentPR = async ({ github, context }: { github: any; context: any
 
   const newMessage = `
 	👋 Thanks for testing#6!
+
+<details>
+	<summary>CHANGELOG.md</summary>
 	
-	<details>
-		<summary>CHANGELOG.md</summary>
-		
-		${tmp}
-		
-	</details>
+	${tmp}
+	
+</details>
   `;
 
   const commentInfo = {
