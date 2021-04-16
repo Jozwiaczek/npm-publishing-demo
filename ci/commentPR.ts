@@ -4,14 +4,14 @@ export const commentPR = async ({ github, context }: { github: any; context: any
   const tmp = readFileSync(`${__dirname}/../../CHANGELOG.md`, 'utf8');
 
   const newMessage = `
-  	👋 Thanks for testing#6!
-  	
-  	<details>
-  		<summary>CHANGELOG.md</summary>
-  		
-  		${tmp}
-  		
-		</details>
+	👋 Thanks for testing#6!
+	
+	<details>
+		<summary>CHANGELOG.md</summary>
+		
+		${tmp}
+		
+	</details>
   `;
 
   const commentInfo = {
