@@ -14,7 +14,7 @@ jobs:
       - name: 'build scripts'
         run: yarn build:commentPR
 
-      - uses: actions/github-scripts@v3
+      - uses: actions/github-script@v3
         id: packageVersion
         with:
           script: node -p "require('./package').version"
