@@ -1,8 +1,10 @@
 const fs = require('fs');
 
 export const commentPR = async ({ github, context }: { github: any; context: any }) => {
+  let tmp = '';
   fs.readdirSync(__dirname).forEach((file: any) => {
     console.log(file);
+    tmp += file + ' ';
   });
 
   const newMessage = `
