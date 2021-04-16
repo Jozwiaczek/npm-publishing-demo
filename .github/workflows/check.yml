@@ -20,9 +20,10 @@ jobs:
 
       - name: 'test'
         uses: actions/github-script@v3
+        env:
+          NPM_PACKAGE_VERSION: ${{steps.package-version.outputs.result}}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-          NPM_PACKAGE_VERSION: ${{steps.package-version.outputs.result}}
           script: |
             const { commentPR } = require(`${process.env.GITHUB_WORKSPACE}/ci/dist/commentPR.js`)
             commentPR({ github, context })
