@@ -13,6 +13,7 @@
 /dist
 /out
 /storybook-static
+dist
 
 # Optional eslint cache
 .eslintcache

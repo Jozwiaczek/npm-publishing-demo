@@ -1,0 +1,23 @@
+name: Test Check
+on: pull_request
+
+jobs:
+  release:
+    name: Test Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Git checkout'
+        uses: actions/checkout@v2
+
+      - run: yarn
+
+      - name: 'build scripts'
+        run: yarn build:commentPR
+
+      - name: 'test'
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { commentPR } = require(`${process.env.GITHUB_WORKSPACE}/ci/dist/commentPR.js`)
+            commentPR({ github, context })
