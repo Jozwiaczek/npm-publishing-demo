@@ -20,4 +20,7 @@ module.exports = {
     '@semantic-release/github',
     '@semantic-release/git',
   ],
+  parserOpts: {
+    mergePatterns: "Merge branch 'development' into main",
+  },
 };
