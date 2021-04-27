@@ -1,3 +1,10 @@
+# [2.31.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.30.0...v2.31.0) (2021-04-27)
+
+
+### Features
+
+* test private repo ([15106fe](https://github.com/Jozwiaczek/npm-publishing-demo/commit/15106fe71cabe43fe1ef46ab4d7cffef6db84bcb))
+
 # [2.30.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.29.0...v2.30.0) (2021-04-27)
 
 
