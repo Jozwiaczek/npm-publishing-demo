@@ -11,6 +11,12 @@ module.exports = {
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
     '@semantic-release/npm',
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd: './build.sh ${nextRelease.version} && node ./build.js ${nextRelease.version}',
+      },
+    ],
     '@semantic-release/github',
     '@semantic-release/git',
   ],
