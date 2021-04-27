@@ -5,4 +5,3 @@ console.log(nextVersion);
 console.log(process.env.TMP);
 const changelog = fs.readFileSync(`./CHANGELOG.md`, 'utf8');
 console.log(changelog);
-throw Error('Quick check');
