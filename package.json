@@ -22,6 +22,7 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "build": "yarn clean && tsc --project tsconfig.json",
+    "checkScript": "node ./build.js",
     "clean": "rimraf dist"
   },
   "devDependencies": {
