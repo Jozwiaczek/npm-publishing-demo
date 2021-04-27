@@ -1,3 +1,10 @@
+# [2.27.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.26.0...v2.27.0) (2021-04-27)
+
+
+### Features
+
+* test workflowsgit ([80349b5](https://github.com/Jozwiaczek/npm-publishing-demo/commit/80349b55a4937364790589017f79bb0420873c36))
+
 # [2.26.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.25.0...v2.26.0) (2021-04-27)
 
 
