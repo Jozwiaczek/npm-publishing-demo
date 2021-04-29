@@ -1,3 +1,11 @@
+## [2.36.1](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.36.0...v2.36.1) (2021-04-29)
+
+
+### Bug Fixes
+
+* test changelog ([839ec4e](https://github.com/Jozwiaczek/npm-publishing-demo/commit/839ec4e30b9b9dcdd02ee48a84e59eb6ada45ec0))
+* test changelog ([b4309db](https://github.com/Jozwiaczek/npm-publishing-demo/commit/b4309db13322100eec6d758790a01240fd83d047))
+
 # [2.36.0](https://github.com/Jozwiaczek/npm-publishing-demo/compare/v2.35.0...v2.36.0) (2021-04-29)
 
 
