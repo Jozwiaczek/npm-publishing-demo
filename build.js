@@ -1,7 +1,8 @@
 const fs = require('fs');
 console.log('Node build script');
-const [nextRelease] = process.argv.slice(2);
-console.table(nextRelease);
+const [version, nextNotes] = process.argv.slice(2);
+console.log('nextNotes:', nextNotes);
+console.log('version:', version);
 console.log('ENV:', process.env.TMP);
 const changelog = fs.readFileSync(`./CHANGELOG.md`, 'utf8');
 console.log('Changelog:', changelog);
