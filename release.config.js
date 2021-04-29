@@ -14,7 +14,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'yarn preCheckScript && node ./build.js -n ${nextRelease}',
+        prepareCmd: 'yarn preCheckScript && node ./build.js --name=${nextRelease}',
       },
     ],
     '@semantic-release/github',
