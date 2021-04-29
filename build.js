@@ -1,11 +1,8 @@
-const fs = require('fs');
+console.log('\n\n---------------\n\n');
 console.log('Node build script');
-const [version, nextNotes] = process.argv.slice(2);
-console.log('nextNotes:', nextNotes);
-console.log('version:', version);
-console.log('ENV:', process.env.TMP);
-const changelog = fs.readFileSync(`./CHANGELOG.md`, 'utf8');
-console.log('Changelog:', changelog);
-const currentRelease = changelog.split('# [')[1];
-const releaseNote = currentRelease.split('\n').slice(2).join('\n');
+
+const [nextRelease] = process.argv.slice(2);
+const nextNotes = nextRelease.notes;
+const releaseNote = nextNotes.split('\n').slice(2).join('\n');
 console.log('Release note:', releaseNote);
+console.log('\n\n---------------\n\n');
