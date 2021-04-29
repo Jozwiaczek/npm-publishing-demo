@@ -14,7 +14,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'yarn preCheckScript && yarn checkScript --json-object ${nextRelease}',
+        prepareCmd: 'yarn preCheckScript && yarn checkScript --json-object=${nextRelease}',
       },
     ],
     '@semantic-release/github',
